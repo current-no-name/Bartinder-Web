@@ -1,9 +1,12 @@
-import { BasicLayout } from "components/templates";
+import { BasicLayout } from 'components/templates';
+import MainPage from './MainPage';
 
-const IndexPage = () => (
-  <BasicLayout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-  </BasicLayout>
-);
+function IndexPage() {
+  return (
+    <BasicLayout title="BARTANDER">
+      <MainPage />
+    </BasicLayout>
+  );
+}
 
 export default IndexPage;

@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
-import Head from "next/head";
+import React, { ReactNode } from 'react';
+import Head from 'next/head';
 
 type BasicLayoutProps = {
   children?: ReactNode;
@@ -8,7 +8,7 @@ type BasicLayoutProps = {
 
 export function BasicLayout({
   children,
-  title = "This is the default title",
+  title = 'This is the default title'
 }: BasicLayoutProps) {
   return (
     <div>
@@ -19,6 +19,11 @@ export function BasicLayout({
       </Head>
 
       {children}
+      <style jsx global>{`
+        body {
+          background: #153a2b;
+        }
+      `}</style>
     </div>
   );
 }
